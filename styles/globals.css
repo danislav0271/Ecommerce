@@ -133,7 +133,6 @@ width: 100%;
   background-color: #dcdcdc;
   border-radius: 15px;
   position: relative;
-  height: 500px;
   line-height: 0.9; 
   width: 100%;
 
@@ -215,7 +214,6 @@ text-align: end;
   background-color: #f02d34;
   border-radius: 15px;
   position: relative;
-  height: 400px;
   line-height: 1; 
   color: white;
   width: 100%;
@@ -619,9 +617,6 @@ margin-top: 160px;
 }
 
 @media screen and (max-width:800px) {
-  .hero-banner-container{
-    height: 560px;
-  }
   .hero-banner-image{
     width: 77%;
     height: 62%;
@@ -629,7 +624,6 @@ margin-top: 160px;
     right: -6%;
   }
   .footer-banner-container{
-    height: 560px;
     margin-top: 80px;
   }
   .footer-banner-image{
