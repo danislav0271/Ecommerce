@@ -35,6 +35,6 @@ export default {
         name: 'details',
         title: 'Details',
         type: 'string',
-      }
+      },
     ]
   }

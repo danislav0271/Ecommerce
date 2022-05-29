@@ -619,18 +619,8 @@ margin-top: 160px;
 }
 
 @media screen and (max-width:800px) {
-  .products-heading{
-    margin-left: 12px;
-  }
-  .products-container{
-    margin-left: 12px;
-  }
-  .footer-banner-container{
-    margin-left: 12px;
-  }
   .hero-banner-container{
     height: 560px;
-    margin-left: 12px;
   }
   .hero-banner-image{
     width: 77%;
