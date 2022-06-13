@@ -297,6 +297,23 @@ text-align: end;
   justify-content: center;
 
 }
+.icons-container{
+  color: #324d67;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 800;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  grid-gap: 10px;
+  gap: 10px;
+}
+.icons-container .icons{
+  font-size: 30px;
+  display: flex;
+  gap: 10px;
+}
+
 .footer-container .icons{
   font-size: 30px;
   display: flex;
@@ -486,7 +503,7 @@ padding: 30px 65px;
 }
 .product-detail-desc .buttons{
   display: flex;
-  gap: 30px;
+  flex-direction: column;
 }
 .buttons .add-to-cart{
   padding: 10px 20px;
@@ -511,7 +528,7 @@ padding: 30px 65px;
   background-color: #f02d34;
   color: white;
   border: none;
-  margin-top: 40px;
+  margin-top: 20px;
   font-size: 18px;
   font-weight: 500;
   cursor: pointer;

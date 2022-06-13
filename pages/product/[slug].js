@@ -1,6 +1,6 @@
  import React, {useState} from 'react';
- import { AiOutlineMinus, AiOutlinePlus, AiFillStar, AiOutlineStar } from 'react-icons/ai';
-
+ import { AiOutlineMinus, AiOutlinePlus, AiFillStar, AiOutlineStar, AiFillFacebook } from 'react-icons/ai';
+ import olx from '../../public/olx.ico';
  import {client, urlFor} from '../../lib/client';
  import { Product } from '../../components';
  import { useStateContext } from '../../context/StateContext';
@@ -46,9 +46,17 @@
                     </div>
                     <h4>Детайли:</h4>
                     <p>{details}</p>
-                    <p className='price'>{price} лв</p>
+                    <p className='price'>от {price} лв</p>
                     <div className='buttons'>
+                        <a className='buy-now' href='tel:+359892698676'>Обади ни се за поръчка: 0892698676</a>
                         <a className='buy-now' href='tel:+359882710547'>Обади ни се за поръчка: 0882710547</a>
+                        <div className='icons-container'>
+                        <p>Или ни пиши на:</p>
+                        <p className='icons'>
+                            <a href='https://www.facebook.com/' target='_blank'><AiFillFacebook /></a>
+                            <a href='https://www.olx.bg/' target='_blank'><img src={olx.src} alt="olx" /></a>
+                        </p>
+                    </div>
                     </div>
                 </div>
             </div>
