@@ -1,5 +1,5 @@
  import React, {useState} from 'react';
- import { AiOutlineMinus, AiOutlinePlus, AiFillStar, AiOutlineStar, AiFillFacebook } from 'react-icons/ai';
+ import { AiOutlineMinus, AiOutlinePlus, AiFillStar, AiOutlineStar, AiFillFacebook, AiFillInstagram } from 'react-icons/ai';
  import olx from '../../public/olx.ico';
  import {client, urlFor} from '../../lib/client';
  import { Product } from '../../components';

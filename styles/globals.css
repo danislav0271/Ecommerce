@@ -11,6 +11,13 @@ body, * {
   width: 0px;
 }
 
+p.email {
+  background-color: #324d67;
+  padding: 5px 12px;
+  border-radius: 6px;
+  color: white;
+}
+
 a {
   color: inherit;
   text-decoration: none;
