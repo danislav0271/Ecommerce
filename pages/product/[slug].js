@@ -53,7 +53,8 @@
                         <div className='icons-container'>
                         <p>Или ни пиши на:</p>
                         <p className='icons'>
-                            <a href='https://www.facebook.com/' target='_blank'><AiFillFacebook /></a>
+                            <a href='https://www.facebook.com/hepacobg/' target='_blank'><AiFillFacebook /></a>
+                            <a href='https://www.instagram.com/hepacobg/' target='_blank'><AiFillInstagram /></a>
                             <a href='https://www.olx.bg/' target='_blank'><img src={olx.src} alt="olx" /></a>
                         </p>
                     </div>
