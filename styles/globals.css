@@ -445,11 +445,12 @@ padding: 30px 65px;
  color: #324d67;
 
 }
-
+img.product-detail-image{
+  inline-size: auto;
+}
 .product-detail-image{
   border-radius: 15px;
-   background-color: #ebebeb;
-
+  background-color: #ebebeb;
   width: 400px;
   height: 400px;
   cursor: pointer;
@@ -780,4 +781,10 @@ margin-top: 160px;
   width: 300px;
   margin: auto;
 }
+.product-detail-image{
+  inline-size: 0;
+}
+}
+.lina-logo {
+  height: 70px;
 }

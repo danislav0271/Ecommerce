@@ -1,6 +1,7 @@
 import React from 'react';
 import { AiFillInstagram, AiFillFacebook } from 'react-icons/ai';
 import olx from '../public/olx.ico';
+import lina from '../public/LOGO.webp'
 
 const Footer = () => {
   console.log(olx);
@@ -13,8 +14,8 @@ const Footer = () => {
         <a href='https://www.olx.bg/' target='_blank'><img src={olx.src} alt="olx" /></a>
       </p>
       <p className='email'><a href = "mailto: hepaco.bg@gmail.com">hepaco.bg@gmail.com</a></p>
-      <p className='email'><a className='buy-now' href='tel:+359882710547'>088 2710547</a></p>
-      <p className='email'><a className='buy-now' href='tel:+359892698676'>089 2698676</a></p>
+      <p className='email'><a className='buy-now' href='tel:+359882710547'>088 2710547</a> / <a className='buy-now' href='tel:+359892698676'>089 2698676</a></p>
+      <p>Our Partner:</p><a href='https://www.lina07.com/'><img className='lina-logo' src={lina.src} alt="lina07" /></a>
     </div>
   )
 }
