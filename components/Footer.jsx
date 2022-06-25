@@ -15,7 +15,7 @@ const Footer = () => {
       </p>
       <p className='email'><a href = "mailto: hepaco.bg@gmail.com">hepaco.bg@gmail.com</a></p>
       <p className='email'><a className='buy-now' href='tel:+359882710547'>088 2710547</a> / <a className='buy-now' href='tel:+359892698676'>089 2698676</a></p>
-      <p>Our Partner:</p><a href='https://www.lina07.com/'><img className='lina-logo' src={lina.src} alt="lina07" /></a>
+      <p>Our Partner:</p><a target='_blank' href='https://www.lina07.com/'><img className='lina-logo' src={lina.src} alt="lina07" /></a>
     </div>
   )
 }
