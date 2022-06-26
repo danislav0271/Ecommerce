@@ -4,7 +4,6 @@ import olx from '../public/olx.ico';
 import lina from '../public/LOGO.webp'
 
 const Footer = () => {
-  console.log(olx);
   return (
     <div className='footer-container'>
       <p>2022 All rights reserved</p>
