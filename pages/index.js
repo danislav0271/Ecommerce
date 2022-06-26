@@ -1,23 +1,55 @@
-import React from 'react';
+import React,{useState} from 'react';
 
 import{ client } from '../lib/client';
 import { Product, FooterBanner, HeroBanner} from '../components';
 
-const Home = ({ products, bannerData}) => (
-    <div>
-      <HeroBanner heroBanner={bannerData.length && bannerData[0]}/>
+const Home = ({ products, bannerData}) => {
+  const [showProducts, setShowProcuts] = useState(products)
 
-      <div className='products-heading'>
-        <h2>Нашите Продукти</h2>
-        <p>Всичко за дома</p>
-      </div>
-      <div className='products-container'>
-        {products?.map((product) => <Product key={product._id} product={product} />)}
-      </div>
+  const showOgradi = () => {
+    setShowProcuts(products?.filter(p=>p.type==="ogradi"));
+  }
+  const showAll = () => {
+    setShowProcuts(products);
+  }
+  const showVrati = () => {
+    setShowProcuts(products?.filter(p=>p.type==="vrati"));
+  }
+  const showPeleti = () => {
+    setShowProcuts(products?.filter(p=>p.type==="peleti"));
+  }
+  const showTermopaneli = () => {
+    setShowProcuts(products?.filter(p=>p.type==="termo"));
+  }
+  const showKonteineri = () => {
+    setShowProcuts(products?.filter(p=>p.type==="konteineri"));
+  }
 
-      <FooterBanner footerBanner={bannerData && bannerData[0]} />
-    </div>
-);
+  return (
+      <div>
+        <HeroBanner heroBanner={bannerData.length && bannerData[0]}/>
+
+        <div className='products-heading'>
+          <h2>Нашите Продукти</h2>
+          <p>Всичко за дома</p>
+        </div>
+        <div className='filter'>
+          <span onClick={showAll}>Всички</span>
+          <span onClick={showOgradi}>Огради</span>
+          <span onClick={showVrati}>Врати</span>
+          <span onClick={showPeleti}>Пелети</span>
+          <span onClick={showTermopaneli}>Термопанели</span>
+          <span onClick={showKonteineri}>Контейнери</span>
+        </div>
+        <div className='products-container'>
+          {showProducts?.map((product) => <Product key={product._id} product={product} />)}
+        </div>
+
+        <FooterBanner footerBanner={bannerData && bannerData[0]} />
+      </div>
+  )
+
+};
 
 export const getServerSideProps = async () => {
   const query = '*[_type == "product"]';
