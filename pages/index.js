@@ -24,6 +24,9 @@ const Home = ({ products, bannerData}) => {
   const showKonteineri = () => {
     setShowProcuts(products?.filter(p=>p.type==="konteineri"));
   }
+  const showVoda = () => {
+    setShowProcuts(products?.filter(p=>p.type==="voda"));
+  }
 
   return (
       <div>
@@ -40,6 +43,7 @@ const Home = ({ products, bannerData}) => {
           <span onClick={showPeleti}>Пелети</span>
           <span onClick={showTermopaneli}>Термопанели</span>
           <span onClick={showKonteineri}>Контейнери</span>
+          <span onClick={showVoda}>Вода</span>
         </div>
         <div className='products-container'>
           {showProducts?.map((product) => <Product key={product._id} product={product} />)}
