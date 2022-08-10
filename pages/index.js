@@ -1,4 +1,5 @@
 import React,{useState} from 'react';
+import Script from 'next/script';
 
 import{ client } from '../lib/client';
 import { Product, FooterBanner, HeroBanner} from '../components';
@@ -28,6 +29,11 @@ const Home = ({ products, bannerData}) => {
     setShowProcuts(products?.filter(p=>p.type==="voda"));
   }
 
+  const showPopup = (e) => {
+    e.preventDefault();
+    return  <Script type="text/javascript" src="https://app.getresponse.com/view_webform_v2.js?u=toutm&webforms_id=zMHvs" data-webform-id="zMHvs"></Script>;
+  }
+
   return (
       <div>
         <HeroBanner heroBanner={bannerData.length && bannerData[0]}/>
@@ -48,6 +54,8 @@ const Home = ({ products, bannerData}) => {
         <div className='products-container'>
           {showProducts?.map((product) => <Product key={product._id} product={product} />)}
         </div>
+
+        <Script type="text/javascript" src="https://app.getresponse.com/view_webform_v2.js?u=toutm&webforms_id=zMH1O" data-webform-id="zMH1O"></Script>
 
         <FooterBanner footerBanner={bannerData && bannerData[0]} />
       </div>
